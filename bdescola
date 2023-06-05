@@ -1,0 +1,21 @@
+create database escola1;
+
+use escola1;
+
+create table professor(
+cpf int primary key,
+nome char(50),
+telefone int(11),
+formacao varchar(80));
+
+create table turmas(
+cod_turma int primary key,
+sala int,
+periodo char(20),
+curso char(50));
+
+create table sala(
+cod_sala int primary key,
+numero int,
+setor varchar,
+tamanho float);
